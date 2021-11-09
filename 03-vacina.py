@@ -81,7 +81,7 @@ class Pessoa:
         if self.__doses_vac == 0:
             self.__tipo_vac = tipo_vac
             self.__doses_vac += 1
-        elif self.__doses_vac != 0 and self.__tipo_vac == tipo_vac:
+        elif self.__tipo_vac == tipo_vac:
             self.__doses_vac += 1
         else:
             print("Paciente já vacinado com outro tipo de vacina")
