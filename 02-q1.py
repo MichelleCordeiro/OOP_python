@@ -1,3 +1,8 @@
+'''
+Implemente um programa que leia três números inteiros denotando os lados de um triangulo. Três números formam um triângulo se cada um deles for menor do que a soma dos outros dois. O programa deve informar se eles formam um triângulo e em caso positivo, qual é o triângulo formado (equilátero, isósceles ou escaleno).
+'''
+
+
 x = int(input('insira o 1o. lado: '))
 y = int(input('insira o 1o. lado: '))
 z = int(input('insira o 1o. lado: '))
