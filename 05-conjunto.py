@@ -29,39 +29,44 @@ class Conjunto:
     '''Representa um conjunto de objetos'''
     
     def __init__(self):
-        self.lista = []
+        self.__lista = []
         
     def adiciona(self, valor):
-        if valor not in self.lista:
-            self.lista.append(valor)
+        if valor not in self.__lista:
+            self.__lista.append(valor)
             
     def interseccao(self, conj):
         lista_aux = Conjunto()
-        for item in self.lista:
+        for item in self.__lista:
             conj = str(conj)
             if item in conj:
                 lista_aux.adiciona(item)
         return lista_aux
     
+    #def __contains__(self, arg):
+        #if arg in self.__lista:
+            #return True
+        #else:
+            #return False
+    
     def __contains__(self, arg):
-        if arg in self.lista:
-            return True
-        else:
-            return False
+        return arg in self.__lista    
             
     def __str__(self):
         x = '{'
-        for i,item in enumerate(self.lista):
-            if i == len(self.lista)-1:
-                x += f'{item}'
-            else:
-                x += f'{item}, '
+        for i,item in enumerate(self.__lista):
+            x += f'{item}'
+            if i != len(self.__lista)-1:
+                x += f', '
         
         x += '}'
         return x
     
+    #ef ehVazio(self):
+        #eturn not(any(self.__lista))
+    
     def ehVazio(self):
-        return not(any(self.lista))
+        return not bool(len(self.__lista))
 
     
 if __name__ == '__main__':
