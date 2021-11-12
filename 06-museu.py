@@ -28,7 +28,6 @@ Obras do museu "museu magnifico":
 Obra removida:
 guernica, picasso (1937)
 '''
-
 class Obra:
     '''Uma obra'''
     
@@ -44,8 +43,8 @@ class Obra:
 class Museu:
     '''Um museu'''
     
-    def __init__(self, museu):
-        self._museu = museu
+    def __init__(self, nome):
+        self._nome = nome
         self._obras = []
         
     def adiciona_obra(self, obra):
@@ -56,7 +55,7 @@ class Museu:
     
     def imprime_obras(self):
         '''Imprime obras'''
-        print(f'Obras do museu "{self._museu}":')
+        print(f'Obras do museu "{self._nome}":')
         for o in self._obras:
             print(f'    {o}')
     
@@ -98,4 +97,3 @@ if __name__ == '__main__':
     # obra continua a existir mesmo tendo sido removida do museu
     print('Obra removida:')
     print(o3)
-
