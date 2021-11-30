@@ -1,5 +1,5 @@
-from musica import Musica
-from playlist import Playlist
+from _07_musica import Musica
+from _07_playlist import Playlist
 
 
 m1 = Musica('Nirvana', 'Smells Like Teen Spirit')
