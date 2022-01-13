@@ -1,4 +1,4 @@
-from _09_Pratica_2_1 import *
+from _10_Pratica_2_1 import *
 
 a1 = InfoArquivo('anotacoes.txt', 0.01)
 a2 = InfoArquivo('nota_fiscal.pdf', 2.0)

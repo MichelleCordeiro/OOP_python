@@ -1,3 +1,23 @@
+'''
+Exercício de Fixação 2
+Implemente as classes concretas TrianguloEquilatero, Quadrado e Circulo que implementa a interface pública especificada na classe Figura mostrada a seguir. Implemente também um programa para testar as classes e o diagrama de classes do sistema.
+
+class Figura(ABC):
+    @property
+    @abstractmethod
+    def area(self):
+        pass
+
+    @property
+    @abstractmethod
+    def perimetro(self):
+        pass
+
+    @abstractmethod
+    def __repr__(self):
+        pass
+'''
+
 from abc import ABC, abstractmethod
 import math
 
